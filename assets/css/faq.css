@@ -1,0 +1,51 @@
+/*** section name: section description
+          Author: Awsaf Ahamed
+          Contact: Awsaf@synapseailabs.com
+          Date Modified:2024-06-05
+             */
+
+.faq{
+    padding: 100px;
+}
+
+/* General styling for the accordion container */
+
+/* Styling for the accordion header */
+.accordion-header {
+    background-color: #f7f7f7; /* Light grey background */
+    border-bottom: 1px solid #e0e0e0; /* Light grey border for separation */
+}
+
+/* Custom styling for the collapsed buttons */
+.accordion-button {
+    color: #000000; /* Darker text for better readability */
+    background-color: #ffffff;
+    font-size: 1.1rem; /* Slightly larger font size */
+    font-weight: bold;
+}
+
+/* Styling for the accordion body */
+.accordion-body {
+    background-color: #fff; /* White background for the content */
+    color: #000000; /* Slightly lighter text color for less harsh contrast */
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+/* Remove default box-shadow from all accordion items */
+.accordion-item {
+    box-shadow: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .faq{
+        padding: 60px 20px;
+    }
+    
+    .accordion-button {
+        font-size: 1rem; /* Smaller font size on smaller screens */
+    }
+    .container {
+        padding: 10px;
+    }
+}

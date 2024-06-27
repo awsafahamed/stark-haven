@@ -1,0 +1,1042 @@
+/*** section name: section description
+          Author: Awsaf Ahamed
+          Contact: Awsaf@synapseailabs.com
+          Date Modified:2024-06-05
+             */
+
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+  color: #000000cf;
+  font-family: 'open sans';
+  ;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  color: #fff !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'open sans', sans-serif;
+  color: #000000;
+}
+
+li{
+  list-style: none;
+}
+
+:root {
+  --primary: #7F56D9;
+  --secondary: #F4EBFF;
+  --text-primary: #101828;
+  --text-secondary: #667085;
+  --badge-bg: #ECFDF3;
+  --badge-text: #027A48;
+  --white: #fff;
+  --dropdown-bg: rgb(252, 253, 251);
+  --shadow: rgba(32, 7, 65, 0.14);
+  
+  --nav-height: 4rem;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background:#000000;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden; /* Ensure overflow is hidden for the zoom effect */
+/*  background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 15%, rgba(220,182,85,1) 100%);*/
+}
+
+
+
+
+#hero .hero-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+ 
+  padding:100px;
+}
+#hero .typography {
+  top: 300px;
+  
+
+}
+  
+#hero h1 {
+  
+  font-style: normal;
+  font-weight: 600;
+  font-size: 66px;
+  color: #ffffff;
+  letter-spacing:3px;
+}
+
+#hero h1 span{
+  color: #dcb655;
+}
+
+#hero h4 {
+  font-family: "Cinzel Decorative";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 10px;
+}
+
+#hero p {
+  font-weight: 400;
+  width: 100%;
+  font-size: 16px;
+  opacity: 1;
+
+
+  color: #000000;
+
+ 
+  
+}
+
+#hero .cta-button{
+  color: #000000;
+  background:#FFF;
+  padding: 10PX 15px;
+  border-radius: 10px;
+}
+
+
+.hero-container .Findoutmore-btn {
+ color: #fff;
+}
+
+
+#hero .hamburger-menu {
+  position: relative;
+  top: -270px; /* Adjust the top position as needed */
+  right:-18px; /* Adjust the right position as needed */
+  cursor: pointer;
+  z-index: 1; /* Ensure it's above other content */
+  cursor: pointer;
+}
+#hero li svg path {
+  stroke: white;
+}
+
+
+@media (max-width: 768px) {
+  #hero {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  #hero .justify-content-end {
+    display: none;
+  }
+
+  #hero .hero-container{
+    padding: 20px;
+  }
+  #hero .hero-container .typography {
+    margin: 0;
+
+  }
+
+  #hero .hero-container .typography h1 {
+    font-size: 40px;
+  }
+
+  #hero .hero-container .typography span {
+    font-size: 35px;
+  }
+
+  #hero p {
+    margin: 0;
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+
+  #hero .li svg path {
+    stroke: #000000; /* Change this to your desired color for mobile */
+}
+}
+
+
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about {
+  width: 100%;
+  height: 100vh;
+  background:#000000;
+  background-size: cover;
+  color: #fff;    
+}
+
+
+
+
+.about .container img{
+  border-radius: 40px;
+}
+
+.about .container  h2{
+  font-size: 40px !important;
+  color: #fff;  
+}
+.about .container  p{
+  color: #fff;
+}
+
+.about .more-circle{
+
+ background: #dcb655;
+ border-radius: 50%;
+ padding: 5px;
+ width: 40px;
+ height: 40px;
+ margin-right: 10px;
+ color: #000;
+
+}
+.about .more-circle i {
+  font-size: 28px;
+}
+
+.more-circle:hover i.bi-plus-lg {
+  display: none;
+}
+
+.more-circle:hover i.bi-dash {
+  display: inline;
+}
+
+.more-circle i.bi-dash {
+  display: none;
+}
+
+.more-button-content{
+  font-weight: bold;
+  padding: 5px;
+  color: #fff;
+}
+.more-button-content a{
+  color: #fff;
+}
+
+
+
+@media (max-width: 768px) {
+
+
+.about {
+  padding: 20px;
+}}
+
+
+
+
+
+
+
+.count{
+  background: #dcb655;
+  height: 50vh;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.count h1 span{
+  font-size: 60px;
+  font-weight: 600;
+}
+
+
+.count p{
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+
+
+
+/*--- Benefits/----*/
+.benefits{
+  background:  #000;
+  padding: 100px;
+}
+.benefits h2{
+  color: #fff;
+
+}
+
+.benefits h5{
+  color: #fff;
+  font-weight: 700;
+}
+
+
+.benefits p{
+  color: #fff;
+}
+.benefits i{
+  font-size:30px;
+  color: #000000;
+}
+.benefits .circle {
+  background: #dcb655;
+  padding: 10px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+}
+@media (max-width: 768px){
+  .benefits{
+    padding: 20px;
+  }
+}
+/* =================================================================
+feature-sections
+************************************************/
+
+.feature {
+  height: auto;
+  background: #000;
+
+}
+
+
+.feature  h2 {
+  font-weight: 600;
+  color: #ffffff;
+
+  margin-top: 100px;
+  
+}
+
+.feature .image-box {
+  
+ 
+  width: 100%;
+  height: 550px;
+  border-radius: 30px;
+}
+
+.feature  .image-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.feature .image-transition {
+  opacity: 0;
+  animation: fadeUp 0.2s ease-in-out forwards;
+}
+
+@keyframes fadeUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.feature .image-box {
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+
+}
+
+.feature .image-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.feature .feature-content {
+  height: 100vh;
+  color: #fff;
+  overflow: hidden;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+}
+
+
+.feature .feature-content h2 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  
+}
+
+.feature .feature-content li {
+  font-size: 20px;
+}
+
+.feature .col-md-6 {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  /* Occupy full viewport height */
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+}
+
+.feature .content-body {
+  overflow-y: auto;
+  height: 100%;
+  /* Adjust as needed */
+}
+
+.no-bullets {
+  list-style-type: none;
+}
+
+.feature i {
+  color: #dcb655;
+}
+
+
+.feature .card {
+  background: #000000;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  height: 300px;
+  justify-content: center;
+}
+
+
+
+
+.feature .btn-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: transparent !important;
+  color: #000;
+  left: -16px;
+}
+
+.feature .btn-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: transparent !important;
+  color: #000;
+  left: -16px;
+}
+
+.feature .btn-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: transparent !important;
+  color: #000;
+  left: -16px;
+}
+
+.feature .btn-link {
+  overflow: hidden;
+  z-index: 1;
+}
+
+.feature .btn-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 16px 16px 16px 48px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s;
+  background: #000;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.feature .btn-link:before {
+  transition: all 0.3s;
+}
+
+.feature .btn-link:before {
+  z-index: -1;
+}
+
+.feature .btn-link:before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: #FFD633;
+  border-radius: 50%;
+  position: absolute;
+  left: 16px;
+  transition: all 0.3s;
+}
+
+@media (max-width: 768px){
+  .feature .col-md-6{
+    position: relative;
+    height: auto;
+  }
+  .feature .feature-content {
+    margin-top: 20PX;
+    height: auto;
+  }
+  .feature .content-body{
+    overflow-x: NONE;
+
+  }
+  .feature .desktop-view{
+    display: none !important;
+  }
+}
+@media (max-width: 768px){
+  .feature .desktop-view{
+      display: none;
+  }
+  .feature .col-md-6, .feature .feature-content {
+      position: relative;
+      height: auto;
+   
+  }
+  .mobile-view{
+    padding: 20px;
+    height: auto;
+  }
+  .feature .no-bullets li{
+
+    font-size: 18px;
+  }
+  .features2 .nav {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    width: 100%;
+    padding-top: 0;
+    justify-content: center; /* Center the buttons in the container */
+}
+
+.features2 .nav .nav-link {
+    flex-basis: calc(50% - 10px); /* Set the base size for each button, accounting for some margin */
+    margin: 5px; /* Add a small margin around each button */
+    text-align: center; /* Center the text inside the buttons */
+}dynamicImage
+
+/* Optional: Adjustments for padding and margins to fit better */
+.features2 .nav .nav-link {
+    padding: 0.5rem 1rem; /* Adjust padding inside the buttons */
+    font-size: 20px;
+}
+.feature .image-box{
+  padding: 0px;
+}
+.feature .col-md-6{
+  padding: 10px;
+}
+
+}
+/* Base CSS for image box */
+.carousel-item .image-box img {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .carousel-item .image-box img {
+      width: 100%; /* Adjust width as necessary, here it's set to take full width */
+      height:auto; /* Adjust height as necessary */
+  }
+  .feature .image-box {
+    padding: 0px;
+    height: auto;
+}
+
+}
+
+
+
+
+
+/*------------------------------------
+#DEMO
+------------------------------------*/
+.demo {
+  height: auto;
+  background:  #333333;
+  padding: 60px;
+}
+
+
+.demo h2 {
+  font-family: "Red Hat Display";
+  color: #fff;
+}
+
+.demo p {
+
+  color: #fff;
+}
+
+@media (max-width: 768px){
+  .demo{
+    padding: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------
+#Footer
+------------------------------------*/
+
+
+
+#footer {
+  height: auto;
+  background: #000000;
+}
+
+#footer .footer-details {
+  padding: 100px;
+  color: #fff;
+}
+
+#footer .col-md-4 img {
+  width: 250px;
+  margin-bottom: 15px;
+  margin-top: -20px;
+}
+
+#footer .col-md-2 a {
+  color: #FFF;
+}
+
+#footer p {
+  color: #fff;
+  font-size: 12px;
+}
+
+#footer form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(100%, 400px);
+  border-bottom: 1px solid #fff;
+
+}
+
+
+#footer input {
+  padding: 0.75rem 0;
+  border: none;
+  background: none;
+  font-weight: 500;
+  transition: border 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  border-radius: 0;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bolder;
+  color: #fff;
+}
+
+#footer input:focus {
+  outline: none;
+}
+
+@media (min-width: 675px) {
+  .layout {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 2rem;
+  }
+
+  .w-50 {
+    width: 50%;
+  }
+
+  .w-25 {
+    width: 25%;
+  }
+}
+
+
+#footer .col-md-3 h5 {
+  color: #fff;
+}
+
+#footer form {
+  position: relative;
+}
+
+#footer svg {
+  margin: 0.5rem;
+}
+
+#footer .c-2 {
+  margin-top: 3.5rem;
+}
+
+#footer form button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+}
+
+#footer .col-md-4 .social {
+  font-size: 30px;
+
+}
+
+#footer .col-md-4 .social i {
+  margin-right: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#footer .col-md-4 .social i:hover {
+  color: #347DD6;
+}
+
+#footer .col-md-4:last-child {
+  position: relative;
+}
+
+#footer .col-md-4:last-child img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 100%;
+  /* Ensure the image doesn't overflow its container */
+}
+
+@media (max-width: 992px) {
+  #footer .col-md-3 {
+    padding: 20px;
+  }
+
+  #footer .footer-details{
+    height: auto;
+    padding: 20px;
+    padding-top: 60px;
+  }
+  #footer .col-md-4 .social {
+    margin-bottom: 30px;
+  }
+}
+
+#placeholder {
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.advance-feature  .accordion-flush .accordion-item .accordion-button{
+  background:#347DD6;
+  border: none;
+  color: #fff;
+}
+
+.advance-feature  .accordion-body{
+  background:#347DD6;
+  border: none;
+  color: #fff;
+}
+
+
+
+
+.plaform-container {
+  height: auto;
+  background: #ffffff;
+  padding: 60px;
+}
+.plaform-container .col-md-3{
+ padding: auto;
+}
+.plaform-container h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.plaform-container h2 span{
+  font-size: 13px;
+}
+.plaform-container  p{
+  font-size: 15px;
+  padding: auto;
+  
+}
+
+.plaform-container  .grid-item{
+ border-radius: 10px;
+  background:none;
+  padding: 20px;
+  min-height: 267px;
+  border-radius: 15px;
+  border: 2px solid #0000007c;
+  color: #000;
+}
+
+.plaform-container .icon-circle {
+ 
+  width: 30px; /* Size of the circle */
+  height: 30px; /* Size of the circle */
+  border-radius: 50%; /* Makes the div a circle */
+  background-color: #347DD6; /* Circle color */
+  display: flex;
+  justify-content: center; /* Centers the icon horizontally */
+  align-items: center; /* Centers the icon vertically */
+  color: white; /* Icon color */
+  margin-bottom: 20px;
+}
+.plaform-container .bi {
+  font-size: 14px; /* Icon size */
+}
+ @media (max-width: 768px) {
+  .plaform-container {
+    padding: 10px; /* Adjust padding for smaller screens */
+
+  }
+
+  .advance-feature .col-md-3 {
+    width: 100%; /* Make the column width 100% for smaller screens */
+    padding: 0; /* Reset padding */
+  }
+  .plaform-container .grid-item{
+    margin-bottom: 20px;
+  }
+
+ 
+}
+
+.advance-feature  .accordion-flush .accordion-item .accordion-button{
+  background:#347DD6;
+  border: none;
+  color: #fff;
+}
+
+.advance-feature  .accordion-body{
+  background:#347DD6;
+  border: none;
+  color: #fff;
+}
+
+
+/* Icon color */
+.breadcrumb-item a i {
+  color: #fff; /* Set icon color to white */
+}
+
+/* Text color */
+.breadcrumb-item a {
+  color: #fff; /* Set text color to white */
+}
+
+/* Hover effect */
+.breadcrumb-item a:hover {
+  text-decoration: none; /* Remove underline on hover */
+  color: #ccc; /* Change text color on hover */
+}
+/* Slash color */
+.breadcrumb-item::after {
+  content: "";
+ 
+}
+
+/* Breadcrumb styles */
+.breadcrumb .bi {
+  color: #fff; /* Set the color of the icon */
+}
+
+.breadcrumb .breadcrumb-item a {
+  color: #fff; /* Set the color of the text */
+  text-decoration: none; /* Remove default underline */
+}
+
+
+
+.about-page {
+  width: 100%;
+  height: 100vh;
+  background:#000000;
+  background-size: cover;
+  color: #fff;    
+}
+
+.about-page .nav-tabs{
+  justify-content: space-evenly;
+  border-bottom: none;
+}
+.about-page .nav-tabs .nav-link {
+  border:none;
+  border-radius: 0;
+  background-color: none;
+  color: #ffffff;
+}
+
+.about-page .nav-tabs .nav-link.active {
+  background-color: #dcb655 !important;
+  border-radius: 10px;
+  color: #000000;
+}
+
+.about-page .tab-content {
+  border:none;
+  border-top: none;
+  padding: 15px;
+}
+
+.about-page .tab-content p {
+  margin-top: 0;
+  color: #fff;
+}
+
+.about-page .img-fluid {
+  border-radius: 40px;
+}
+
+
+
+.values {
+  padding: 60px 0;
+  background: #000000;
+}
+
+.values .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+ 
+}
+
+.values .section-title  h2{
+  color: #fff !important;
+}
+
+.values .icon-box {
+  background: #333333;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.values .icon-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.values .icon {
+  margin-bottom: 15px;
+}
+
+.values .icon i {
+  font-size: 48px;
+  color: #dcb655;
+}
+
+.values h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.values p {
+  font-size: 15px;
+  color: #777;
+}
+.values h2{
+  color: #fff;
+}
