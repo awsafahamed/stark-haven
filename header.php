@@ -448,9 +448,9 @@ header
             }
 
             .header.scrolled {
-                background-color: #fff;
+                background-color: #000;
                 /* Background color when scrolled */
-                color: #000;
+                color: #fff;
                 /* Font color when scrolled */
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                 /* Optional: Add shadow for depth */
