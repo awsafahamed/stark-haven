@@ -505,7 +505,7 @@ header
 
             .header.scrolled .nav_link,
             .header.scrolled .btn {
-                color: #000;
+                color: #fff;
                 /* Change color to black when header is scrolled */
             }
 
